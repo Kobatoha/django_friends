@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+    <h3>Добро пожаловать {{ profile.user }}</h3>
+    <p>К сожалению, вы не были авторизованы</p>
+        <a href="{% url 'login' %}"><button class="btn btn-success">Войти</button></a>
+    </div>
+{% endblock %}
